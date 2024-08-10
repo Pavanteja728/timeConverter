@@ -1,0 +1,237 @@
+input[type="text"] {
+    width: 150px;
+    height: 25px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+     /* add this to make the input field block-level */
+  }
+  .Add{
+    display: flex;
+    
+    
+  }
+  
+  button {
+    background-color: transparent;
+    color: #fff;
+    
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .icon-style{
+    height: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+  }
+  .icon-style-dark{
+    height: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+
+  }
+  
+ 
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center; /* add this to center the heading */
+  }
+  
+  .date-picker {
+    width: 300px;
+    margin: 20px auto; /* add auto margin to center the date picker */
+  }
+  
+  button {
+   
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block; /* add this to make the buttons inline-block */
+  }
+  
+  button:hover {
+    background-color: grey;
+  }
+  
+  .shareable-link {
+    margin-top: 20px;
+    text-align: center; /* add this to center the shareable link */
+  }
+  
+  .shareable-link a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .shareable-link a:hover {
+    color: #23527c;
+  }
+  
+  /* add styles for the droppable area */
+  .droppable {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px auto;
+  }
+  
+  .draggable {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .Headers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .displayTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  margin-bottom: 20px;
+    
+    
+    
+  }
+  .timeZoneHeader{
+    font-family: "Roboto";
+    font-size: 28px;
+  }
+
+.currentTimeZone{
+    font-family: "Roboto";
+    font-size: 20px;
+
+}
+  
+.newDisplayTime{
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.deleteButton{
+    height: 35px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+/* ... */
+
+.newDisplayTime {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .offset {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .map {
+    width: 800px;
+    height: 600px;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+  
+  .marker {
+    font-size: 14px;
+    color: #666;
+  }
+  .mainHead{
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    
+  }
+  .shareableLink{
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding-left: 160px;
+    padding-right: 160px;
+    
+  }
+  .paraLink{
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: bold;
+
+  }
+  .anchorLink{
+    font-weight: 300;
+    font-family: "Roboto";
+   
+  }
+  .mainCard{
+    width: 1300px;
+  }
+  
+  
+  
+  .AddButton.dark {
+   
+    color: black;
+    
+  }
+  
+  .AddButton.dark .icon-style {
+    color: white;
+    padding-top: 100px;
+  }
+  
+
+  
+  .deleteButton {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 14px;
+    
+    color: #333;
+  }
+  
+  .dark-mode{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  
+  
+  
