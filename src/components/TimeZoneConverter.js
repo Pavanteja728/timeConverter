@@ -44,9 +44,8 @@ class TimeZoneConverter extends Component {
   };
 
   handleTimeZoneDeletion = (index) => {
-    this.setState((prevState) => ({
-      timeZones: prevState.timeZones.filter((_, i) => i !== index),
-    }));
+    const updatedTimeZones = this.state.timeZones.filter((_, i) => i !== index);
+    this.setState({ timeZones: updatedTimeZones });
   };
 
   onDragEnd = (result) => {
@@ -76,8 +75,12 @@ class TimeZoneConverter extends Component {
   handleTimeOffsetChange = (timeZoneName, timeOffset) => {
     const newTime = moment(this.state.currentTime).add(timeOffset, 'hours');
     const updatedTimeZones = this.state.timeZones.map((zone) => {
-      const offset = moment(newTime).utcOffset(zone.offset, true);
-      return { ...zone, offset };
+      if (zone.name === timeZoneName) {
+        const offset = moment(newTime).utcOffset(zone.offset, true);
+        return { ...zone, offset };
+      } else {
+        return zone;
+      }
     });
     this.setState({ timeZones: updatedTimeZones, currentTime: newTime });
   };
@@ -139,7 +142,7 @@ class TimeZoneConverter extends Component {
                           timeZone={zone}
                           currentTime={currentTime}
                           timeOffset={timeOffsets[zone.name] || 0}
-                          onDelete={() => this.handleTimeZoneDeletion(zone.name)}
+                          onDelete={() => this.handleTimeZoneDeletion(index)} // Correctly pass index
                           onTimeOffsetChange={(timeOffset) => this.handleTimeOffsetChange(zone.name, timeOffset)}
                           darkMode={darkMode}
                         />
